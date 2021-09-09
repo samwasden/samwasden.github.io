@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(45deg, #E07A5F, #F2CC8F);
+    background-size: cover;
+}
+
+nav {
+    width: 50vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #f4f1de9f;
+    font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+#menu li {
+    transition-duration: 250ms;
+    user-select: none;
+}
+
+#menu li:hover {
+    opacity: 1;
+    color: white;
+    text-decoration: underline;
+}
+
+.current {
+    opacity: 1;
+    color: white;
+}
+
+section {
+    position: fixed;
+    right: 50vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    height: 80vh;
+    width: .2vw;
+    background: linear-gradient(rgba(244,241,222,0) 0%, rgba(255,255,255,.75) 0%, rgba(244,241,222,0) 100%);
+}
+
+content {
+    background: linear-gradient(360deg, #3d405b83, #f2cc8f75);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 400vh;
+    width: 100vw;
+}
+
+#placeholder {
+    width: 50vw;
+    height: inherit;
+}
+
+#innerBody {
+    width: 50vw;
+    height: inherit;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#innerBody div {
+    height: 80vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+}
+
