@@ -1,0 +1,9 @@
+Experience building a certain project
+
+One of the projects I am the most proud of is what I consider to be my first real javascript project. I had created simple websites with minimal javascript for animations or low level functionality but this was my first project that would be built around javascript. I wanted to create solitaire. In the end the project ended up being Vanilla javascript, css, and html. I posted it on codepent.io to share and that was the extent of what I used. I chose to use these tools because I honestly had not had much experience in coding and this appeared to be the best place to start. I didn't feel comfortable trying to learn a framework having such a limited understanding of javascript so that was out of the question as well and from what I could tell, I would be able to accomplish everything I wanted to within the confines of vanilla javascript. Throughout the course of this project I learned a number of things, most importantly perhaps was the functionality of classes and objects in general as well as a vast amount of DOM access and manipulation.
+
+Experience fixing a bug
+
+Perhaps one of the most intense coding periods in my storied development career was really a math problem. I was creating a tree that would render in a three dimensional space on a javascript canvas. I was having an issue positioning branches based on the rotation that was applied to them. I was walking around holding pens in my hand trying to figure out how the rotation would correlate to the height and the width, trying random things like multiplying by negatives and changing sine to cosine and tangent. I was spending time on message boards and 3d modeling tools. The solution actually came to me while I was working on googles 3d modeling software sketchup when I realized what I was missing. 
+
+Experience learning a new technology
