@@ -19,7 +19,6 @@ nav {
 
 #menu {
     height: 40vh;
-    width: 16vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -67,7 +66,7 @@ section {
     margin-top: 10vh;
     margin-bottom: 10vh;
     height: 80vh;
-    width: .2vw;
+    width: .3vw;
     background: linear-gradient(rgba(244,241,222,0) 0%, rgba(255,255,255,1) 0%, rgba(244,241,222,0) 100%);
 }
 
@@ -231,3 +230,56 @@ h3 {
     align-items: flex-end;
 }
 
+#contactMe {
+    height: 40vh;
+    width: 16vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#contactMe input {
+    width: inherit;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    padding: 4px;
+}
+
+#contactMe textarea {
+    width: inherit;
+    height: 20vh;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    resize: none;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    padding: 4px;
+}
+
+#contactMe textarea::placeholder, input::placeholder {
+    color: rgba(255, 255, 255, 0.507);
+    font-family: 'Oswald', sans-serif;
+}
+
+#contactMe textarea:focus, input:focus {
+    outline: none;
+}
+
+#contactMe h3 {
+    align-self: center;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+}
