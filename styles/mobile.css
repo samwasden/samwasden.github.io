@@ -166,7 +166,7 @@ content {
 
 #bigLogoBox {
     max-width: 100vw;
-    margin-top: 10vh;
+    margin-top: 4vh;
 }
 
 h3 {
@@ -207,9 +207,16 @@ h3 {
     height: inherit;
 }
 
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
 #about p {
-    margin-top: 4rem;
-    font-size: 1.5rem;
+    margin-top: 4vh;
+    font-size: 1rem;
     line-height: 2rem;
     padding-top: 2rem;
     font-weight: 100;
@@ -294,4 +301,12 @@ h3 {
     font-family: 'Oswald', sans-serif;
     font-weight: 100;
     border: none;
+}
+
+#resumeName {
+    color: white;
+    text-decoration: underline white;
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
 }
