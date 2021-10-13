@@ -58,14 +58,15 @@ function submitForm(e) {
     const MESSAGE_ID = 'entry.263866717';
     const COMPANY_ID = 'entry.1774717764';
     const EMAIL_ID = 'entry.998396544';
-    const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/'
     const formData = new FormData();
     formData.append(NAME_ID, name)
     formData.append(MESSAGE_ID, message)
     formData.append(COMPANY_ID, company)
     formData.append(EMAIL_ID, email)
 
-    axios.post(CORS_PROXY + ACTION_URL, formData).then(res => {console.log(res.data)})
+    axios.post(ACTION_URL, formData)
+        .then(res => {console.log(res.data)})
+        .catch(err => { console.log(err)});
 }
 
 
