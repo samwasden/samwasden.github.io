@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="./styles/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="./styles/mobile.css">
+
     <title>sam wasdens portfolio</title>
 </head>
 <body>
@@ -27,7 +29,6 @@
             <div id="about" class="contain">
                 <h1>about</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <img id="profilePic" src="./styles/images/profPic.jpeg">
             </div>
             <div id="skills" class="contain"> 
                 <h1>skills</h1>
@@ -36,6 +37,10 @@
                         <div id="html" class="logos">
                             <img src="https://cdn-icons-png.flaticon.com/512/732/732050.png">
                             <p>HTML</p>
+                        </div>
+                        <div id="react" class="logos">
+                            <img src="./styles/images/ReactLogo.png">
+                            <p>REACTjs</p>
                         </div>
                         <div id="html" class="logos">
                             <img src="https://cdn-icons-png.flaticon.com/512/732/732007.png">
@@ -54,6 +59,20 @@
                         <div id="html" class="logos">
                             <img src="https://git-scm.com/images/logos/downloads/Git-Icon-Black.png">
                             <p>git</p>
+                        </div>
+                    </div>
+                    <div class="logoBox">
+                        <div id="postgresql" class="logos">
+                            <img src="./styles/images/PostgresqlLogo.png">
+                            <p>postgreSQL</p>
+                        </div>
+                        <div id="three" class="logos">
+                            <img src="./styles/images/ThreeLogo.png">
+                            <p>THREEjs</p>
+                        </div>
+                        <div id="github" class="logos">
+                            <img src="./styles/images/GithubLogo.png">
+                            <p>github</p>
                         </div>
                     </div>
                 </div>
@@ -97,18 +116,19 @@
                     </div>
                     <form id="contactMe">
                         <h3>contact me directly.</h3>
-                        <input type="text" name="userName" placeholder="name">
-                        <textarea type="text" name="userMessage" placeholder="message"></textarea>
-                        <input type="select" name="userType" placeholder="company">
-                        <input type="text" name="userContact" placeholder="return email">
+                        <input id='userName' type="text" name="userName" placeholder="name">
+                        <textarea id='userMessage' type="text" name="userMessage" placeholder="message"></textarea>
+                        <input id='userCompany' type="select" name="userType" placeholder="company">
+                        <input id='userEmail' type="text" name="userContact" placeholder="return email">
+                        <button id='submitButton' type="submit">send</button>
                     </form>
-                    <div id="credits">Icons made by Pixel perfect from www.flaticon.com</div>
                 </div>
             </div>
         </div>
     </content>
     <footer>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

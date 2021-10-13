@@ -5,6 +5,11 @@ function initialize() {
     setMenuButtons()
 }
 
+function initializeMobile() {
+    setMenuButtons(1)
+    checkScroll()
+}
+
 function setMenu() {
     let menu = document.querySelector("#menu")
     let position = Math.floor(window.scrollY/window.innerHeight)
@@ -21,17 +26,51 @@ function setMenu() {
     }
 }
 
-function setMenuButtons() {
+function setMenuButtons(mobile = 0) {
     let navButtons = document.querySelector("#menu").children
     for (let i=0; i<navButtons.length; i++) {
         navButtons[i].addEventListener("click", (e) => {
             let index = Array.prototype.indexOf.call(e.target.parentNode.children, e.target)
             window.scrollTo( {
                 left: 0, 
-                top: window.innerHeight*index, 
+                top: window.innerHeight*(index + mobile), 
                 behavior: "smooth" })
         })
     }
+    setSubmitButton()
 }
 
-initialize()
+function setSubmitButton() {
+    let form = document.querySelector('#contactMe')
+
+    form.addEventListener('submit', submitForm)
+}
+
+function submitForm(e) {
+    console.log('hello')
+    e.preventDefault()
+    let name = document.querySelector('#userName').value || 'name'
+    let message = document.querySelector('#userMessage').value || 'message'
+    let company = document.querySelector('#userCompany').value || 'company'
+    let email = document.querySelector('#userEmail').value || 'email'
+    const ACTION_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSeqc8yHHc5tiD0axwvozh3d9L1K-sf9OKOxPAmcNEGpoyHZqg/viewform?usp=sf_link'
+    const NAME_ID = 'entry.732343598';
+    const MESSAGE_ID = 'entry.263866717';
+    const COMPANY_ID = 'entry.1774717764';
+    const EMAIL_ID = 'entry.998396544';
+    const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/'
+    const formData = new FormData();
+    formData.append(NAME_ID, name)
+    formData.append(MESSAGE_ID, message)
+    formData.append(COMPANY_ID, company)
+    formData.append(EMAIL_ID, email)
+
+    axios.post(CORS_PROXY + ACTION_URL, formData).then(res => {console.log(res.data)})
+}
+
+
+if (screen.width >= 768) {
+    initialize()
+} else {
+    initializeMobile()
+}
