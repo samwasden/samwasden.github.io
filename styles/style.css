@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
 
+/* FULL PAGE TAGS */
+
 body {
     width: 100vw;
+    max-width: 100vw;
+    min-width: 100vw;
     height: auto;
     background: linear-gradient(45deg, #E07A5F, #F2CC8F);
     background-size: cover;
@@ -11,6 +15,8 @@ body {
 
 nav {
     width: 50vw;
+    max-width: 50vw;
+    min-width: 50vw;
     height: 100vh;
     position: fixed;
     display: flex;
@@ -19,18 +25,91 @@ nav {
     flex-direction: column;
 }
 
-#menu {
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    color: #f4f1de9f;
-    font-size: 4rem;
-    font-family: 'Oswald', sans-serif;
+section {
+    position: fixed;
+    left: 50vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    height: 80vh;
+    width: .3vw;
+    background: linear-gradient(rgba(244,241,222,0) 0%, rgba(255,255,255,1) 0%, rgba(244,241,222,0) 100%);
 }
 
-#name {
+content {
+    background: linear-gradient(360deg, #3d405b83, #f2cc8f75);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    height: 400vh;
+    width: 100vw;
+    max-width: 100vw;
+    min-width: 100vw;
+}
+
+.placeholder {
+    width: 50vw;
+    max-width: 50vw;
+    min-width: 50vw;
+    height: inherit;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.page_body {
+    height: auto;
+    width: 50vw;
+    max-width: 50vw;
+    min-width: 50vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    height: 100vh;
+    max-height: 100vh;
+    min-height: 100vh;
+    width: 50vw;
+    max-width: 50vw;
+    min-width: 50vw;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container_body {
+    height: 80vh;
+    max-height: 80vh;
+    min-height: 80vh;
+    width: 40vw;
+    max-width: 40vw;
+    min-width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.container_head {
+    height: 20vh;
+    max-height: 20vh;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* NAVIGATION TAGS */
+
+.page_name {
     margin-top: 6vw;
     margin-bottom: 6vw;
     display: flex;
@@ -45,13 +124,23 @@ nav {
     transition-duration: 1s;
 }
 
+.menu {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    color: #ffffff80;
+    font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
+}
 
-#menu li {
+.menu li {
     transition-duration: 250ms;
     user-select: none;
 }
 
-#menu li:hover {
+.menu li:hover {
     opacity: 1;
     color: white;
     text-decoration: underline;
@@ -62,296 +151,133 @@ nav {
     color: white;
 }
 
-section {
-    position: fixed;
-    right: 50vw;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    height: 80vh;
-    width: .3vw;
-    background: linear-gradient(rgba(244,241,222,0) 0%, rgba(255,255,255,1) 0%, rgba(244,241,222,0) 100%);
-}
+/* ABOUT TAGS */
 
-content {
-    background: linear-gradient(360deg, #3d405b83, #f2cc8f75);
-    background-size: cover;
+.profile_body {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 400vh;
-    width: 100vw;
-}
-
-#placeholder {
-    max-width: 50vw;
-    width: 50vw;
-    height: inherit;
-    display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
     align-items: flex-start;
-}
-
-#placeholder h1 {
-    position: fixed;
-    top: 90vh;
-    color: #f4f1de9f;
-    font-size: 10vh;
-    font-family: 'Oswald', sans-serif;
-    line-height: 11vh;
-}
-
-#innerBody {
-    max-width: 50vw;
-    width: 50vw;
-    height: inherit;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    overflow-x: hidden;
-}
-
-.contain {
-    max-height: 80vh;
-    height: 80vh;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    color: white;
-    font-size: 3rem;
-    font-family: 'Oswald', sans-serif;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-}
-
-#links {
-    width: 20vw;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
-
-#links img {
-    height: 2rem;
-    filter: invert()
-}
-
-
-#links img:hover {
-    height: 2.1rem;
-}
-
-#credits {
-    font-size: 1rem;
-    font-weight: 100;
-
-}
-
-.logos img {
-    height: 6rem;
-    filter: invert();
-}
-
-.logos p {
-    font-size: 1.5rem;
-    padding: 5px;
-    font-weight: 100;
-}
-
-.logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.logoBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2vh;
-}
-
-#bigLogoBox {
-    margin-top: 4vh;
-}
-
-h3 {
-    font-size: 2rem;
-}
-
-.project img {
-    width: 16vw;
-    border: 2px solid white;
-    margin-right: 2vw;
-}
-
-.project {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 40vw;
-    margin-top: 2vh;
-    font-weight: 100;
-    padding: 2vh;
-    text-decoration: none;
-    color: white;
-}
-
-.project:hover {
-    background: linear-gradient(-45deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.25) 100%);
-}
-
-.project:hover h3 {
-    text-decoration: underline;
-}
-
-.box {
-    margin-top: 4vh;
-}
-
-#contactBox {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-}
-
-#longname {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-#contactMe {
-    height: 50vh;
-    width: 16vw;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    flex-direction: column;
-    font-size: 1.5rem;
-    font-weight: 100;
-}
-
-#contactMe input {
-    width: inherit;
-    background: none;
-    border: 1px solid white;
-    color: white;
-    line-height: 1.5rem;
-    font-size: 1rem;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 100;
-    padding: 4px;
-}
-
-#contactMe textarea {
-    width: inherit;
-    height: 20vh;
-    background: none;
-    border: 1px solid white;
-    color: white;
-    resize: none;
-    line-height: 1.5rem;
-    font-size: 1rem;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 100;
-    padding: 4px;
-}
-
-#contactMe textarea::placeholder, input::placeholder {
-    color: rgba(255, 255, 255, 0.507);
-    font-family: 'Oswald', sans-serif;
-}
-
-#contactMe textarea:focus, input:focus {
-    outline: none;
-}
-
-#contactMe h3 {
-    align-self: center;
-    line-height: 2rem;
-    font-size: 1.5rem;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 100;
-}
-
-#profilePic {
-    margin-top: 4vh;
-    object-fit: cover;
-    object-position: 80% 0%;
-    height: 36vh;
-    width: 30vw;
-    border: 1px solid white;
-}
-
-#submitButton {
-    display: flex;
-    align-self: center;
-    background: none;
-    color: white;
-    font-size: 1.5rem;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 100;
-    border: none;
-}
-
-#resumeName {
-    color: white;
-    text-decoration: underline white;
-    font-size: 1.5rem;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 100;
-}
-
-.website_description {
-    font-size: 1.25rem;
-    margin-top: 1rem;
+    justify-content: space-between;
 }
 
 .profile_desc {
-    width: 50%;
-    font-size: 1.25rem;
-    font-weight: 100;
+    width: 56%;
+    font-size: 1.5rem;
     line-height: 1.75rem;
+    font-weight: 100;
     text-align: justify;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
 .profile_pic {
     width: 40%;
-    border: 2px solid white
+    border: 1px solid white;
 }
 
-#about_contain {
-    width: 100%;
+.resumeName {
+    color: white;
+    text-decoration: none;
+}
+
+.resumeLink {
+    text-decoration: none;
+}
+
+.resumeLink:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+/* SKILLS TAGS */
+
+.logo {
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 12px 20px;
+}
+
+.logo p {
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-top: 5px;
+}
+
+.logo img {
+    filter: invert();
+    height: 6rem;
+}
+
+.logo_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo_row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
 }
 
-#resumeName {
-    margin-top: 20px;
-    font-size: 1.25rem;
-    font-weight: 100;
-    line-height: 1.75rem;
-    text-align: justify;
+/* PROJECTS TAGS */
+
+.project {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    text-decoration: none;
 }
 
-.email_link {
-    height: 40%;
-    color: white;
+.project:hover {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.project div {
+    width: 60%;
+}
+
+.project img {
+    width: 35%;
+    border: 1px solid white;
+}
+
+.description h3 {
+    font-size: 2rem;
+    font-weight: 100;
     text-decoration: none;
+    color: white;
+    line-height: 2.25rem;
+}
+
+.description p {
     font-size: 1.25rem;
     font-weight: 100;
-    line-height: 1.75rem;
-    text-align: justify;
+    text-decoration: none;
+    color: white;
+    line-height: 1.5rem;
+}
+
+/* CONTACT TAGS */
+
+.links a img {
+    width: 40px;
+    margin: 20px 12px;
+    filter: invert();
+}
+
+.links a img:hover {
+    width: 42px;
 }

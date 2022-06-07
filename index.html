@@ -12,10 +12,10 @@
 </head>
 <body>
     <nav>
-        <ul id="name">
-            <li id="longname">SW</li>
+        <ul class="page_name">
+            <li>SW</li>
         </ul>
-        <ul id="menu">
+        <ul class="menu">
             <li>about</li>
             <li>skills</li>
             <li>projects</li>
@@ -24,85 +24,95 @@
     </nav>
     <section></section>
     <content>
-        <div id="placeholder"></div>
-        <div id="innerBody">
-            <div id="about" class="contain">
-                <h1>about</h1>
-                <div class="contain" id='about_contain'>
-                    <img class="profile_pic" src="./styles/images/ProfilePic.jpeg">
-                    <div class="profile_desc">
-                        <p>Sam Wasden is a software developer based in Lehi, UT. He is currently studying web development specifically using javascript and the powerful React.js library, node.js, postgreSQL and more. Sam has experience in python and java and is interested in continuing to learn and broaden his horizon. Recently, Sam has spent a significant amount of time learning and using the three.js package and would like to continue to learn more libraries for developing dynamic and interactive websites and programs. Sam Wasden is currently open to work oppurtunities and excited to expand his experience and network.</p>
-                        <div class="logos" id="resumeLogo">
-                            <a href="https://docs.google.com/document/d/1-u1CK8oFK5Nb4UAx3WKnCl5sbHO07WYcN4yZFugtE4U/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><p id="resumeName">resumé</p></a>
+        <div class="placeholder"></div>
+        <div class="page_body">
+            <div class="container">
+                <div class="container_head">
+                    <h1>about</h1>
+                </div>
+                <div class="container_body">
+                    <div class="profile_body">
+                        <img class="profile_pic" src="./styles/images/ProfilePic.jpeg">
+                        <div class="profile_desc">
+                            <p>Sam Wasden is a software developer based in Lehi, UT. He is currently studying web development specifically using javascript and the powerful React.js library, node.js, postgreSQL and more. Sam has experience in python and java and is interested in continuing to learn and broaden his horizons. Recently, Sam has spent a significant amount of time learning and using the three.js package and would like to continue to learn more libraries for developing dynamic and interactive websites and programs. Sam Wasden is currently open to work oppurtunities and excited to expand his experience and network.</p>
+                            <div class="logo">
+                                <a class="resumeLink" href="https://docs.google.com/document/d/1-u1CK8oFK5Nb4UAx3WKnCl5sbHO07WYcN4yZFugtE4U/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><p class="resumeName">resumé</p></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="skills" class="contain"> 
-                <h1>skills</h1>
-                <div id="bigLogoBox">
-                    <div class="logoBox">
-                        <div id="html" class="logos">
-                            <img src="https://cdn-icons-png.flaticon.com/512/732/732050.png">
-                            <p>HTML</p>
+            <div class="container"> 
+                <div class="container_head">
+                    <h1>skills</h1>
+                </div>
+                <div class="container_body">
+                    <div class="logo_box">
+                        <div class="logo_row">
+                            <div id="html" class="logo">
+                                <img src="https://cdn-icons-png.flaticon.com/512/732/732050.png">
+                                <p>HTML</p>
+                            </div>
+                            <div id="react" class="logo">
+                                <img src="./styles/images/ReactLogo.png">
+                                <p>REACTjs</p>
+                            </div>
+                            <div id="html" class="logo">
+                                <img src="https://cdn-icons-png.flaticon.com/512/732/732007.png">
+                                <p>CSS</p>
+                            </div>
                         </div>
-                        <div id="react" class="logos">
-                            <img src="./styles/images/ReactLogo.png">
-                            <p>REACTjs</p>
+                        <div class="logo_row">
+                            <div id="html" class="logo">
+                                <img src="https://miro.medium.com/max/512/1*YWazhGyGmNs6K3HZE7lS7Q.png">
+                                <p>javascript</p>
+                            </div>
+                            <div id="html" class="logo">
+                                <img src="https://icon-library.com/images/603824_nodejs_512x512_85849.png">
+                                <p>node.js</p>
+                            </div>
+                            <div id="html" class="logo">
+                                <img src="https://git-scm.com/images/logos/downloads/Git-Icon-Black.png">
+                                <p>git</p>
+                            </div>
                         </div>
-                        <div id="html" class="logos">
-                            <img src="https://cdn-icons-png.flaticon.com/512/732/732007.png">
-                            <p>CSS</p>
-                        </div>
-                    </div>
-                    <div class="logoBox">
-                        <div id="html" class="logos">
-                            <img src="https://miro.medium.com/max/512/1*YWazhGyGmNs6K3HZE7lS7Q.png">
-                            <p>javascript</p>
-                        </div>
-                        <div id="html" class="logos">
-                            <img src="https://icon-library.com/images/603824_nodejs_512x512_85849.png">
-                            <p>node.js</p>
-                        </div>
-                        <div id="html" class="logos">
-                            <img src="https://git-scm.com/images/logos/downloads/Git-Icon-Black.png">
-                            <p>git</p>
-                        </div>
-                    </div>
-                    <div class="logoBox">
-                        <div id="postgresql" class="logos">
-                            <img src="./styles/images/PostgresqlLogo.png">
-                            <p>postgreSQL</p>
-                        </div>
-                        <div id="three" class="logos">
-                            <img src="./styles/images/ThreeLogo.png">
-                            <p>THREEjs</p>
-                        </div>
-                        <div id="github" class="logos">
-                            <img src="./styles/images/GithubLogo.png">
-                            <p>github</p>
+                        <div class="logo_row">
+                            <div id="postgresql" class="logo">
+                                <img src="./styles/images/PostgresqlLogo.png">
+                                <p>postgreSQL</p>
+                            </div>
+                            <div id="three" class="logo">
+                                <img src="./styles/images/ThreeLogo.png">
+                                <p>THREEjs</p>
+                            </div>
+                            <div id="github" class="logo">
+                                <img src="./styles/images/GithubLogo.png">
+                                <p>github</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="projects" class="contain">
-                <h1>projects</h1>
-                <div class="box">
-                    <a id="project1" class="project" href="https://veroli.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="./styles/images/veroli.png">
+            <div class="container">
+                <div class="container_head">
+                    <h1>projects</h1>
+                </div>
+                <div class="container_body">
+                    <a class="project" href="https://veroli.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="./styles/images/SmartMeat.png">
                         <div class="description">
-                            <h3>veroli website</h3>
+                            <h3>smart meat</h3>
                             <p class="website_description">a website commisioned by the artist Veroli to share music and information as well as song lyrics, created using React and CSS.</p>
                         </div>
                     </a>
-                    <a id="project2" class="project" href="https://wasden-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="./styles/images/treecursion.png">
+                    <a class="project" href="https://wasden-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="./styles/images/PhraseFinder.png">
                         <div class="description">
-                            <h3>tree cursive</h3>
+                            <h3>phrase finder</h3>
                             <p class="website_description">a recursive javascript program I created to render a randomized unique tree made up of a collection of cylinders. Rendered using WebGL, written using javascript and the Three.js library.</p>
                         </div>
                     </a>
-                    <a id="project3" class="project" href="https://sportssuck.app" target="_blank" rel="noopener noreferrer">
+                    <a class="project" href="https://sportssuck.app" target="_blank" rel="noopener noreferrer">
                         <img src="./styles/images/SportsSuck.png">
                         <div class="description">
                             <h3>sports suck</h3>
@@ -112,27 +122,18 @@
                 </div>
 
             </div>
-            <div id="contact" class="contain">
-                <h1>contact</h1>
-                <div id="contactBox" class="box">
-                    <div id="written_links">
-                        <a class="email_link" href="mailto:samwasden.dev@gmail.com" target="_blank" rel="noopener noreferrer"><p class="email_link">samjwasden@gmail.com</p></a>
-                    </div>
-                    <div id="links">
+            <div class="container">
+                <div class="container_head">
+                    <h1>contact</h1>
+                </div>
+                <div class="container_body">
+                    <div class="links">
                         <a href="https://twitter.com/SamWasden" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/512/733/733635.png"></a>
                         <a href="https://www.facebook.com/sam.wasden.1/" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/512/733/733605.png"></a>
                         <a href="https://www.youtube.com/channel/UC_kBX_TciwRA4SdYnWIDwZg" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/512/733/733646.png"></a>
                         <a href="https://github.com/samwasden" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/512/733/733609.png"></a>
                         <a href="mailto:samwasden.dev@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/512/732/732026.png"></a>
                     </div>
-                    <!-- <form id="contactMe">
-                        <h3>contact me directly.</h3>
-                        <input id='userName' type="text" name="userName" placeholder="name">
-                        <textarea id='userMessage' type="text" name="userMessage" placeholder="message"></textarea>
-                        <input id='userCompany' type="select" name="userType" placeholder="company">
-                        <input id='userEmail' type="text" name="userContact" placeholder="return email">
-                        <button id='submitButton' type="submit">send</button>
-                    </form> -->
                 </div>
             </div>
         </div>

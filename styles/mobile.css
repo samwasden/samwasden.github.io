@@ -1,38 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
 
+/* FULL PAGE TAGS */
+
 body {
     width: 100vw;
+    max-width: 100vw;
+    min-width: 100vw;
     height: auto;
-    background: linear-gradient(45deg, #E07A5F, #F2CC8F), linear-gradient(360deg, #3d405b83, #f2cc8f75);
+    background: linear-gradient(45deg, #E07A5F, #F2CC8F);
     background-size: cover;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
     overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
 }
 
 nav {
     width: 100vw;
+    max-width: 100vw;
+    min-width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-#menu {
-    height: 40vh;
+section {
+    display: none;
+}
+
+content {
+    background-size: cover;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
-    color: #ffffff;
-    font-size: 4rem;
-    font-family: 'Oswald', sans-serif;
+    flex-direction: row;
+    height: 400vh;
+    width: 100vw;
+    max-width: 100vw;
+    min-width: 100vw;
 }
 
-#name {
+.placeholder {
+    display: none;
+}
+
+.page_body {
+    height: auto;
+    width: 100vw;
+    max-width: 100vw;
+    min-width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    height: 100vh;
+    max-height: 100vh;
+    min-height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
+    min-width: 100vw;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container_body {
+    height: 80vh;
+    max-height: 80vh;
+    min-height: 80vh;
+    width: 90vw;
+    max-width: 90vw;
+    min-width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.container_head {
+    height: 20vh;
+    max-height: 20vh;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* NAVIGATION TAGS */
+
+.page_name {
     margin-top: 6vw;
     margin-bottom: 6vw;
     display: flex;
@@ -47,13 +110,23 @@ nav {
     transition-duration: 1s;
 }
 
+.menu {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    color: #ffffff80;
+    font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
+}
 
-#menu li {
+.menu li {
     transition-duration: 250ms;
     user-select: none;
 }
 
-#menu li:hover {
+.menu li:hover {
     opacity: 1;
     color: white;
     text-decoration: underline;
@@ -64,249 +137,131 @@ nav {
     color: white;
 }
 
-section {
-display: none;
-}
+/* ABOUT TAGS */
 
-content {
-    background-size: cover;
+.profile_body {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 400vh;
-    width: 100vw;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
-#placeholder {
-    display: none;
-}
-
-#placeholder h1 {
-    display: none;
-}
-
-#innerBody {
-    width: 100vw;
-    height: inherit;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-
-}
-
-.contain {
-    max-height: 70vh;
-    height: 70vh;
-    padding-top: 15vh;
-    padding-bottom: 15vh;
-    padding-left: 5vw;
-    width: 90vw;
-    max-width: 90vw;
-    padding-right: 5vw;
-    color: white;
-    font-size: 3rem;
-    font-family: 'Oswald', sans-serif;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-}
-
-#links {
-    width: 80vw;
-    height: 10vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
-
-#links img {
-    height: 2rem;
-    filter: invert()
-}
-
-
-#links img:hover {
-    height: 2.1rem;
-}
-
-#credits {
-    font-size: 1rem;
-    font-weight: 100;
-
-}
-
-.logos img {
-    height: 4rem;
-    filter: invert();
-}
-
-.logos p {
+.profile_desc {
+    width: 100%;
     font-size: 1.5rem;
-    padding: 5px;
+    line-height: 1.75rem;
     font-weight: 100;
-}
-
-.logos {
+    text-align: justify;
+    margin-left: 10px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
     flex-direction: column;
-    padding: 1rem;
 }
 
-.logoBox {
+.profile_pic {
+    display: none;
+}
+
+.resumeName {
+    color: white;
+    text-decoration: none;
+}
+
+.resumeLink {
+    text-decoration: none;
+}
+
+.resumeLink:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+/* SKILLS TAGS */
+
+.logo {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 2vh;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 10px;
 }
 
-#bigLogoBox {
-    max-width: 100vw;
-    margin-top: 4vh;
+.logo p {
+    font-size: 1.25rem;
+    font-weight: 200;
+    margin-top: 5px;
 }
 
-h3 {
-    font-size: 2rem;
+.logo img {
+    filter: invert();
+    height: 5rem;
 }
 
-.project img {
-    width: 40vw;
-    border: 2px solid white;
-    margin-right: 2vw;
+.logo_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
+
+.logo_row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/* PROJECTS TAGS */
 
 .project {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: flex-start;
-    justify-content: flex-start;
-    width: 80vw;
-    margin-top: 2vh;
-    font-weight: 100;
-    padding: 2vh;
+    padding: 20px;
     text-decoration: none;
-    color: white;
 }
 
 .project:hover {
-    background: linear-gradient(-45deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.25) 100%);
+    background: rgba(0, 0, 0, 0.25);
 }
 
-.box {
-    margin-top: 4vh;
+.project div {
+    width: 100%;
 }
 
-#contactBox {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    height: inherit;
+.project img {
+    display: none;
 }
 
-#about {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-}
-
-#about p {
-    margin-top: 4vh;
-    font-size: 1rem;
-    line-height: 2rem;
-    padding-top: 2rem;
+.description h3 {
+    font-size: 2rem;
     font-weight: 100;
-    text-align: justify;
+    text-decoration: none;
+    color: white;
+    line-height: 2.25rem;
 }
 
-#longname {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-#contactMe {
-    height: 60vh;
-    width: 80vw;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    flex-direction: column;
-    font-size: 1.5rem;
+.description p {
+    font-size: 1.25rem;
     font-weight: 100;
-}
-
-#contactMe input {
-    width: inherit;
-    background: none;
-    border: 1px solid white;
+    text-decoration: none;
     color: white;
     line-height: 1.5rem;
-    font-size: 1rem;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 100;
-    padding: 4px;
 }
 
-#contactMe textarea {
-    width: inherit;
-    height: 20vh;
-    background: none;
-    border: 1px solid white;
-    color: white;
-    resize: none;
-    line-height: 1.5rem;
-    font-size: 1rem;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 100;
-    padding: 4px;
+/* CONTACT TAGS */
+
+.links a img {
+    width: 40px;
+    margin: 0 6px;
+    filter: invert();
 }
 
-#contactMe textarea::placeholder, input::placeholder {
-    color: rgba(255, 255, 255, 0.507);
-    font-family: 'Oswald', sans-serif;
-}
-
-#contactMe textarea:focus, input:focus {
-    outline: none;
-}
-
-#contactMe h3 {
-    align-self: center;
-    line-height: 2rem;
-    font-size: 1.5rem;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 100;
-}
-
-#profilePic {
-    margin-top: 4vh;
-    object-fit: cover;
-    object-position: 80% 0%;
-    height: 36vh;
-    width: 30vw;
-    border: 1px solid white;
-}
-
-#submitButton {
-    display: flex;
-    align-self: center;
-    background: none;
-    color: white;
-    font-size: 1.5rem;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 100;
-    border: none;
-}
-
-#resumeName {
-    color: white;
-    text-decoration: underline white;
-    font-size: 1.5rem;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 100;
+.links a img:hover {
+    width: 42px;
 }
